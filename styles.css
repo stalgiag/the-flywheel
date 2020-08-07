@@ -1,0 +1,134 @@
+.banner-container {
+    margin-top: 2%;
+    max-width:100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 5% 25% 25%;
+    grid-template-rows: 5% 45% 45% 5%;
+    grid-template-areas:
+    ". . . . . . ."
+    ". . . . image image ."
+    "title title . . image image ."
+    "title title . . . . .";
+    height: 150px;
+    background: red;
+}
+
+.banner-image-container{
+    grid-area: image;
+    overflow: hidden;
+}
+
+.banner-title-container {
+    align-content: center;
+    grid-area: title;
+    background: white;
+    text-align: center;
+}
+
+.banner-title-container h2{
+    text-decoration: line-through red;
+}
+
+.banner-image-container img{
+    width: 100%;
+    height: auto;
+}
+
+/* BODY TOP */
+
+.body-top-container {
+    margin-top: 10px;
+    margin-right:20px;
+
+    display: grid;
+    height: 30%;
+    gap:10px;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+    "left-vid main-vid right-vid"
+    "red-block main-vid .";
+}
+
+.top-left-red-container {
+    background-color: red;
+    width:60%;
+    margin: 0 auto;
+    grid-area: red-block;
+}
+
+.i-video-container {
+    width: 100%;
+}
+
+.i-video-container video{
+    width: 100%;
+    height: 100%;
+}
+
+#top-main-i-video {
+    grid-area: main-vid;
+}
+
+#top-right-i-video {
+    grid-area: right-vid;
+}
+
+#top-left-i-video {
+    grid-area: left-vid;
+}
+
+.body-main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.body-main-column img{
+    width: 100%;
+}
+
+#center-main-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 20% 35% 35%;
+    grid-template-areas:
+    "first first"
+    "second second"
+    "third third"
+    "fourth fourth"
+}
+
+#body-main-first-row {
+    grid-area: first;
+}
+
+
+#body-main-second-row {
+    grid-area: second;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#body-main-third-row {
+    grid-area: third;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#body-main-fourth-row {
+    grid-area: fourth;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#footer-container {
+    width: 100%;
+}
+
+#footer-container img{
+    width: 100%;
+}
