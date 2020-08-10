@@ -132,3 +132,18 @@
 #footer-container img{
     width: 100%;
 }
+
+.gray-text {
+    background-color: gray;
+    color: gray;
+}
+
+.light-gray-text {
+    background-color: lightgray;
+    color: lightgray;
+}
+
+.red-text {
+    background-color: red;
+    color: red;
+}
