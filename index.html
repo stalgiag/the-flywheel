@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>The Flywheel</title>
     <link rel="stylesheet" href="styles.css">
+    <script src='./main.js' ></script>
 </head>
 
 <body>
@@ -13,89 +14,124 @@
             <h2>The Flywheel</h2>
         </div>
         <div class="banner-image-container">
-            <img
-                src="https://www.ksnt.com/wp-content/uploads/sites/86/2020/02/Fire-House-Structure-Blaze-2.png?w=1920&h=1080&crop=1" />
+            <video disablePictureInPicture autoplay muted loop>
+                <source src="./video/reduced/Fire-with-sound.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+            </video>
         </div>
     </div>
     <div class="body-top-container">
         <div id="top-left-i-video" class="i-video-container">
-            <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+            <video disablePictureInPicture autoplay muted loop>
+                <source src="./video/reduced/strikes.mp4" type="video/mp4">
                 Your browser doesn't support HTML5 video tag.
             </video>
+
         </div>
+        <mark class="red-text filler-text">
+        </mark>
+        <mark class="gray-text filler-text">
+        </mark>
         <div id="top-main-i-video" class="i-video-container">
-            <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+            <video disablePictureInPicture>
+                <source src="./video/reduced/shutdown.mp4" type="video/mp4">
                 Your browser doesn't support HTML5 video tag.
             </video>
         </div>
-        <div id="top-right-i-video" class="i-video-container">
-            <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+        <div id="top-right-i-video" class="non-i-video-container">
+            <video disablePictureInPicture autoplay muted loop>
+                <source src="./video/reduced/help-us-stop-socialism.mp4" type="video/mp4">
                 Your browser doesn't support HTML5 video tag.
             </video>
+            <button class='vid-button' name="button" onclick="playVideo()">play</button>
+
+            <button class='vid-button' name="button" onclick="nextVideo()">next</button>
         </div>
-        <div class="top-left-red-container">
-        </div>
+        
     </div>
     <div class="body-main-container">
         <div class="body-main-column" id="left-main-container">
             <!-- <img src="img/placeholder-left.png" /> -->
-            <p class="light-gray-text">Non qui quis aliqum do.Non qui quis aliqum do</p>
-            <p class="gray-text">Non qui quis aliqum do.Non qui quis aliqum do</p>
-            <p class="red-text">Non qui quis aliqum do.Non qui quis aliqum do</p>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="red-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="red-text filler-text"></mark>
         </div>
         <div class="body-main-column" id="center-main-container">
             <div id="body-main-first-row">
-                <img src="img/placeholder-body-main-first.png" />
+                <mark class="light-gray-text filler-text">######3</mark>
+                <mark class="light-gray-text filler-text">####</mark>
+                <mark class="gray-text filler-text"></mark>
             </div>
-            <div id="body-main-second-row">
-                <div id="body-main-second-row-fire">
-                    <img
-                src="https://www.ksnt.com/wp-content/uploads/sites/86/2020/02/Fire-House-Structure-Blaze-2.png?w=1920&h=1080&crop=1" />
-                </div>
-                <div id="body-main-second-row-gray">
-                <img src="img/placeholder-body-main-second-right.png"/>
-                </div>
+            <div id="live-logo">
+               LIVE
             </div>
             <div id="body-main-third-row">
-                <div id="body-main-third-row-left-video" class="i-video-container">
-                    <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+                <div id="body-main-third-row-left-video" class="non-i-video-container">
+                    <video disablePictureInPicture autoplay muted loop>
+                        <source src="./video/reduced/eagle.mp4" type="video/mp4">
                         Your browser doesn't support HTML5 video tag.
                     </video>
                 </div>
-                <div id="body-main-third-row-right-video" class="i-video-container">
-                    <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+                <div id="body-main-third-row-right-video" class="non-i-video-container">
+                    <video disablePictureInPicture autoplay muted loop>
+                        <source src="./video/reduced/abandoned-loop.mp4" type="video/mp4">
                         Your browser doesn't support HTML5 video tag.
                     </video>
                 </div>
             </div>
             <div id="body-main-fourth-row">
                 <div id="body-main-fourth-row-left-video" class="i-video-container">
-                    <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+                    <video disablePictureInPicture autoplay muted loop>
+                        <source src="./video/reduced/evictions.mp4" type="video/mp4">
                         Your browser doesn't support HTML5 video tag.
                     </video>
                 </div>
                 <div id="body-main-fourth-row-middle-video" class="i-video-container">
-                    <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+                    <video disablePictureInPicture autoplay muted loop>
+                        <source src="./video/reduced/food-banks.mp4" type="video/mp4">
                         Your browser doesn't support HTML5 video tag.
                     </video>
                 </div>
                 <div id="body-main-fourth-row-right-video" class="i-video-container body-main-fourth-row-video">
-                    <video poster="http://stalgiagrigg.name/images_2019/placeholder.jpg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+                    <video disablePictureInPicture autoplay muted loop>
+                        <source src="./video/reduced/milk.mp4" type="video/mp4">
                         Your browser doesn't support HTML5 video tag.
                     </video>
                 </div>
             </div>
         </div>
         <div class="body-main-column" id="right-main-container">
-            <img src="img/placeholder-right.png" />
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="red-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="light-gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="gray-text filler-text"></mark>
+            <mark class="red-text filler-text"></mark>
         </div>
     </div>
     <div id="footer-container">

@@ -15,7 +15,13 @@
 
 .banner-image-container{
     grid-area: image;
+    width: 100%;
     overflow: hidden;
+}
+
+.banner-image-container video{
+    margin-top: -50px;
+    width: 100%;
 }
 
 .banner-title-container {
@@ -37,24 +43,16 @@
 /* BODY TOP */
 
 .body-top-container {
-    margin-top: 10px;
-    margin-right:20px;
 
+    margin-top: 10px;
     display: grid;
     height: 30%;
     gap:10px;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 80% 20%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 90% 10%;
     grid-template-areas:
     "left-vid main-vid right-vid"
-    "red-block main-vid .";
-}
-
-.top-left-red-container {
-    background-color: red;
-    width:60%;
-    margin: 0 auto;
-    grid-area: red-block;
+    ". main-vid .";
 }
 
 .i-video-container {
@@ -64,6 +62,10 @@
 .i-video-container video{
     width: 100%;
     height: 100%;
+}
+
+.non-i-video-container video{
+    width: 100%;
 }
 
 #top-main-i-video {
@@ -80,30 +82,31 @@
 
 .body-main-container {
     width: 100%;
+    gap: 10px;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
-}
-
-.body-main-column img{
-    width: 100%;
-}
-
-#center-main-container {
-    height: 100%;
-    width: 100%;
-    display: grid;
+    /* gap: 10px; */
+    grid-template-columns: 1fr 2fr 1fr;
     margin-top: 5px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 20% 35% 35%;
-    grid-template-areas:
-    "first first"
-    "second second"
-    "third third"
-    "fourth fourth"
+}
+
+mark.filler-text{
+    font-size: 1em;
+    margin: 20px;
+    overflow:hidden;
+
+}
+
+#left-main-container {
+    overflow: hidden;
+}
+#right-main-container {
+    overflow: hidden;
+    margin-left: 10px;
 }
 
 #body-main-first-row {
     grid-area: first;
+    overflow: hidden;
 }
 
 
@@ -122,6 +125,7 @@
 #body-main-fourth-row {
     grid-area: fourth;
     display: grid;
+    gap: 10px;
     grid-template-columns: 33% 33% 33%;
 }
 
@@ -130,20 +134,36 @@
 }
 
 #footer-container img{
+    z-index: -9999;
     width: 100%;
 }
 
+
 .gray-text {
-    background-color: gray;
     color: gray;
 }
 
+mark.gray-text{
+    background-color: gray;
+}
+
 .light-gray-text {
-    background-color: lightgray;
     color: lightgray;
 }
 
+mark.light-gray-text {
+    background-color: lightgray;
+}
+
 .red-text {
-    background-color: red;
     color: red;
+}
+
+mark.red-text {
+    background-color: red;
+}
+
+#live-logo {
+    color: red;
+    margin: 10px;
 }
