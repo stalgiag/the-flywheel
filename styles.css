@@ -70,10 +70,40 @@
 
 #marquee {
     overflow: hidden;
+    grid-area: marquee;
+}
+
+#play-button-container {
+    grid-area: main;
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    
+}
+#play-button {
+    opacity:0.7;
+    z-index: 9999;
+}
+
+#play-button img{
+    width: 100%;
+}
+
+#play-button:hover{
+    opacity: 0.9;
 }
 
 #body-top-center {
     grid-area: main-vid;
+    display: grid;
+    grid-template-areas:
+    "marquee"
+    "main";
+}
+
+#top-main-i-video {
+    grid-area: main;
+    pointer-events: none;
 }
 
 #top-right-i-video {

@@ -52,6 +52,12 @@ function nextVideo() {
 function playVideo() {
     const mainVid = document.querySelector("#top-main-i-video");
     mainVid.children[0].play();
+    hidePlayButton();
+}
+
+function hidePlayButton() {
+    const playButton = document.querySelector('#play-button-container');
+    playButton.style.visibility = "hidden";
 }
 
 function flashingLive() {
