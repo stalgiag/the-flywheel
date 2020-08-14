@@ -23,17 +23,15 @@
     </div>
 
     <div class="body-top-container">
-        <div id="top-left-i-video" class="i-video-container">
-            <video disablePictureInPicture autoplay muted loop>
-                <source src="./video/reduced/strikes.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-            </video>
-
+        <div id="body-top-left">
+            <div id="top-left-i-video" class="i-video-container">
+                <video disablePictureInPicture autoplay muted loop>
+                    <source src="./video/reduced/strikes.mp4" type="video/mp4">
+                    Your browser doesn't support HTML5 video tag.
+                </video>
+            </div>
         </div>
-        <mark class="red-text filler-text">
-        </mark>
-        <mark class="gray-text filler-text">
-        </mark>
+        <div id="top-red"></div>
         <div id="body-top-center">
             <div id="marquee" class="marquee3k" 
             data-speed="1"
@@ -46,6 +44,11 @@
                     <img src="./img/play.png" />
                 </div>
             </a>
+            <div id="skip-button-container" >
+                <a id="skip-button" onclick="nextVideo()" href="javascript:void(0);">
+                    <img src="img/next.png" />
+                </a>
+            </div>
             <div id="top-main-i-video" class="i-video-container">
                 <video disablePictureInPicture>
                     <source src="./video/reduced/shutdown.mp4" type="video/mp4">
@@ -53,15 +56,16 @@
                 </video>
             </div>
         </div>
-        <div id="top-right-i-video" class="non-i-video-container">
-            <video disablePictureInPicture autoplay muted loop>
-                <source src="./video/reduced/help-us-stop-socialism.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-            </video>
-            <button class='vid-button' name="button" onclick="playVideo()">play</button>
-
-            <button class='vid-button' name="button" onclick="nextVideo()">next</button>
+        <div id="body-top-right">
+            <div id="top-right-i-video" class="non-i-video-container">
+                <video disablePictureInPicture autoplay muted loop>
+                    <source src="./video/reduced/help-us-stop-socialism.mp4" type="video/mp4">
+                    Your browser doesn't support HTML5 video tag.
+                </video>
+            </div>
         </div>
+        <div id="top-gray"></div>
+
         
     </div>
     <div class="body-main-container">
@@ -87,9 +91,9 @@
         </div>
         <div class="body-main-column" id="center-main-container">
             <div id="body-main-first-row">
-                <mark class="light-gray-text filler-text">######3</mark>
-                <mark class="light-gray-text filler-text">####</mark>
-                <mark class="gray-text filler-text"></mark>
+                <mark class="light-gray-text filler-text">#############################3</mark>
+                <mark class="light-gray-text filler-text">#########################</mark>
+                <mark class="gray-text filler-text">#######################</mark>
             </div>
             <div id="live-logo">
                LIVE

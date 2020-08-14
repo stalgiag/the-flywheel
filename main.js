@@ -19,7 +19,7 @@ function randomizeFillerSize() {
     fillerText = document.querySelectorAll(".filler-text");
     for(const filler of fillerText) {
         const charNum = filler.parentElement.clientWidth / 50;
-        filler.innerHTML = '#'.repeat(getRandomInt(30, 40 +charNum));
+        filler.innerHTML = filler.innerHTML + '#'.repeat(getRandomInt(30, 40 +charNum));
         filler.style.fontSize = (getRandomArbitrary(0.6, 1.5)) + "em";
     }
 

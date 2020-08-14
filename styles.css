@@ -43,16 +43,35 @@
 /* BODY TOP */
 
 .body-top-container {
-
     margin-top: 10px;
     display: grid;
     height: 30%;
     gap:10px;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 90% 10%;
     grid-template-areas:
     "left-vid main-vid right-vid"
-    ". main-vid .";
+    "gray main-vid red";
+}
+
+#top-gray {
+    grid-area: gray;
+    background: gray;
+    margin-top: -20%;
+    margin-bottom: 40%;
+}
+
+#top-red {
+    grid-area: red;
+    background: red;
+}
+
+#body-top-left {
+    grid-area: left-vid;
+}
+
+#body-top-right {
+    grid-area: right-vid;
 }
 
 .i-video-container {
@@ -78,12 +97,39 @@
     width: 50%;
     justify-self: center;
     align-self: center;
-    
 }
+
 #play-button {
+    position: relative;
     opacity:0.7;
     z-index: 9999;
 }
+
+#skip-button-container {
+    grid-area: main;
+    
+    z-index: 9999;
+    pointer-events:none;
+    position: relative;
+}
+
+#skip-button {
+    pointer-events: all;
+    position: absolute;
+    right: 0;
+    width: 8%;
+    bottom: -10%;
+    opacity:0.5;
+}
+
+#skip-button:hover{
+    opacity: 1.0;
+}
+
+#skip-button img{
+    width: 100%;
+}
+
 
 #play-button img{
     width: 100%;
@@ -132,6 +178,7 @@ mark.filler-text{
 
 #left-main-container {
     overflow: hidden;
+    
 }
 #right-main-container {
     overflow: hidden;
