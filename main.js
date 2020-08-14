@@ -5,6 +5,7 @@ window.onload = () => {
     randomizeFillerSize();
     flashingLive();
     onVideoEnd();
+    Marquee3k.init()
 }
 
 function onVideoEnd() {
