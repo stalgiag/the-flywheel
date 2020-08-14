@@ -68,7 +68,11 @@
     width: 100%;
 }
 
-#top-main-i-video {
+#marquee {
+    overflow: hidden;
+}
+
+#body-top-center {
     grid-area: main-vid;
 }
 
