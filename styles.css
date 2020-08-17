@@ -11,6 +11,7 @@
     "title title . . . . .";
     height: 150px;
     background: red;
+    
 }
 
 .banner-image-container{
@@ -29,10 +30,12 @@
     grid-area: title;
     background: white;
     text-align: center;
+    
 }
 
 .banner-title-container h2{
     text-decoration: line-through red;
+    font-size: 35px;
 }
 
 .banner-image-container img{
@@ -90,6 +93,9 @@
 #marquee {
     overflow: hidden;
     grid-area: marquee;
+    color: red;
+    font-size: 15px;
+
 }
 
 #play-button-container {
@@ -137,6 +143,8 @@
 
 #play-button:hover{
     opacity: 0.9;
+    color: red;
+    
 }
 
 #body-top-center {
@@ -197,6 +205,7 @@ mark.filler-text{
     grid-template-columns: 50% 50%;
 }
 
+/* live videos */
 #body-main-third-row {
     grid-area: third;
     display: grid;
@@ -234,6 +243,7 @@ mark.gray-text{
 
 mark.light-gray-text {
     background-color: lightgray;
+    
 }
 
 .red-text {
@@ -247,4 +257,5 @@ mark.red-text {
 #live-logo {
     color: red;
     margin: 10px;
+    font-weight: bold;
 }
