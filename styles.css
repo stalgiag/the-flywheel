@@ -244,7 +244,7 @@ mark.red-text {
   background-color: red;
 }
 
-#live-logo {
+.live-logo {
   color: red;
   margin: 10px;
   font-weight: bold;
