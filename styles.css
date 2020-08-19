@@ -212,7 +212,9 @@ mark.filler-text {
 }
 
 #footer-container {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
+
 }
 
 #footer-container img {
