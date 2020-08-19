@@ -1,261 +1,268 @@
 .banner-container {
-    margin-top: 2%;
-    max-width:100%;
-    display: grid;
-    grid-template-columns: 15% 15% 15% 5% 25% 25%;
-    grid-template-rows: 5% 45% 45% 5%;
-    grid-template-areas:
+  margin-top: 2%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 5% 25% 25%;
+  grid-template-rows: 5% 45% 45% 5%;
+  grid-template-areas:
     ". . . . . . ."
     ". . . . image image ."
     "title title . . image image ."
     "title title . . . . .";
-    height: 150px;
-    background: red;
-    
+  height: 150px;
+  background: red;
 }
 
-.banner-image-container{
-    grid-area: image;
-    width: 100%;
-    overflow: hidden;
+.banner-image-container {
+  grid-area: image;
+  width: 100%;
+  overflow: hidden;
 }
 
-.banner-image-container video{
-    margin-top: -50px;
-    width: 100%;
+.banner-image-container video {
+  margin-top: -50px;
+  width: 100%;
 }
 
 .banner-title-container {
-    align-content: center;
-    grid-area: title;
-    background: white;
-    text-align: center;
-    
+  align-content: center;
+  grid-area: title;
+  background: white;
+  text-align: center;
 }
 
-.banner-title-container h2{
-    text-decoration: line-through red;
-    font-size: 35px;
+.banner-title-container h2 {
+  text-decoration: line-through red;
+  font-size: 35px;
 }
 
-.banner-image-container img{
-    width: 100%;
-    height: auto;
+.banner-image-container img {
+  width: 100%;
+  height: auto;
 }
 
 /* BODY TOP */
 
 .body-top-container {
-    margin-top: 10px;
-    display: grid;
-    height: 30%;
-    gap:10px;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 90% 10%;
-    grid-template-areas:
+  margin-top: 10px;
+  display: grid;
+  height: 30%;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 90% 10%;
+  grid-template-areas:
     "left-vid main-vid right-vid"
     "gray main-vid red";
 }
 
 #top-gray {
-    grid-area: gray;
-    background: gray;
-    margin-top: -20%;
-    margin-bottom: 50%;
+  grid-area: gray;
+  background: gray;
+  margin-top: -20%;
+  margin-bottom: 50%;
 }
 
 #top-red {
-    grid-area: red;
-    background: red;
+  grid-area: red;
+  background: red;
 }
 
 #body-top-left {
-    grid-area: left-vid;
+  grid-area: left-vid;
 }
 
 #body-top-right {
-    grid-area: right-vid;
+  grid-area: right-vid;
 }
 
 .i-video-container {
-    width: 100%;
+  width: 100%;
 }
 
-.i-video-container video{
-    width: 100%;
-    height: 100%;
+.i-video-container video {
+  width: 100%;
+  height: 100%;
 }
 
-.non-i-video-container video{
-    width: 100%;
+.non-i-video-container video {
+  width: 100%;
 }
 
 #marquee {
-    overflow: hidden;
-    grid-area: marquee;
-    color: red;
-    font-size: 15px;
-
+  overflow: hidden;
+  grid-area: marquee;
+  color: red;
+  font-size: 15px;
 }
 
 #play-button-container {
-    grid-area: main;
-    width: 50%;
-    justify-self: center;
-    align-self: center;
+  grid-area: main;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
 }
 
 #play-button {
-    position: relative;
-    opacity:0.7;
-    z-index: 9999;
+  position: relative;
+  opacity: 0.7;
+  z-index: 9990;
 }
 
 #skip-button-container {
-    grid-area: main;
-    
-    z-index: 9999;
-    pointer-events:none;
-    position: relative;
+  grid-area: main;
+
+  z-index: 9990;
+  pointer-events: none;
+  position: relative;
 }
 
 #skip-button {
-    pointer-events: all;
-    position: absolute;
-    right: 0;
-    width: 8%;
-    bottom: -10%;
-    opacity:0.5;
+  pointer-events: all;
+  position: absolute;
+  right: 0;
+  width: 8%;
+  bottom: -10%;
+  opacity: 0.5;
 }
 
-#skip-button:hover{
-    opacity: 1.0;
+#skip-button:hover {
+  opacity: 1;
 }
 
-#skip-button img{
-    width: 100%;
+#skip-button img {
+  width: 100%;
 }
 
-
-#play-button img{
-    width: 100%;
+#play-button img {
+  width: 100%;
 }
 
-#play-button:hover{
-    opacity: 0.9;
-    color: red;
-    
+#play-button:hover {
+  opacity: 0.9;
+  color: red;
 }
 
 #body-top-center {
-    grid-area: main-vid;
-    display: grid;
-    grid-template-areas:
+  grid-area: main-vid;
+  display: grid;
+  grid-template-areas:
     "marquee"
     "main";
 }
 
 #top-main-i-video {
-    grid-area: main;
-    pointer-events: none;
+  grid-area: main;
+  pointer-events: none;
 }
 
 #top-right-i-video {
-    grid-area: right-vid;
+  grid-area: right-vid;
 }
 
 #top-left-i-video {
-    grid-area: left-vid;
+  grid-area: left-vid;
 }
 
 .body-main-container {
-    width: 100%;
-    gap: 10px;
-    display: grid;
-    /* gap: 10px; */
-    grid-template-columns: 1fr 2fr 1fr;
-    margin-top: 5px;
+  width: 100%;
+  gap: 10px;
+  display: grid;
+  /* gap: 10px; */
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 5px;
 }
 
-mark.filler-text{
-    font-size: 1em;
-    margin: 20px;
-    overflow:hidden;
-
+mark.filler-text {
+  font-size: 1em;
+  margin: 20px;
+  overflow: hidden;
 }
 
 #left-main-container {
-    overflow: hidden;
-    
+  overflow: hidden;
 }
 #right-main-container {
-    overflow: hidden;
-    margin-left: 10px;
+  overflow: hidden;
+  margin-left: 10px;
 }
 
 #body-main-first-row {
-    grid-area: first;
-    overflow: hidden;
+  grid-area: first;
+  overflow: hidden;
 }
 
-
 #body-main-second-row {
-    grid-area: second;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  grid-area: second;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 /* live videos */
 #body-main-third-row {
-    grid-area: third;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  grid-area: third;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 #body-main-fourth-row {
-    grid-area: fourth;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 33% 33% 33%;
+  grid-area: fourth;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 33% 33% 33%;
 }
 
 #footer-container {
-    width: 100%;
+  width: 100%;
 }
 
-#footer-container img{
-    z-index: -9999;
-    width: 100%;
+#footer-container img {
+  z-index: -9999;
+  width: 100%;
 }
-
 
 .gray-text {
-    color: gray;
+  color: gray;
 }
 
-mark.gray-text{
-    background-color: gray;
+mark.gray-text {
+  background-color: gray;
 }
 
 .light-gray-text {
-    color: lightgray;
+  color: lightgray;
 }
 
 mark.light-gray-text {
-    background-color: lightgray;
-    
+  background-color: lightgray;
 }
 
 .red-text {
-    color: red;
+  color: red;
 }
 
 mark.red-text {
-    background-color: red;
+  background-color: red;
 }
 
 #live-logo {
-    color: red;
-    margin: 10px;
-    font-weight: bold;
+  color: red;
+  margin: 10px;
+  font-weight: bold;
+}
+
+#mobile-site-block {
+    visibility: hidden;
+  position: fixed;
+  width: 97%;
+  height: 100%;
+  background: red;
+  z-index: 9999;
+  border: 10px white solid;
+}
+
+#mobile-site-block h2 {
+  padding-top: 20px;
+  font-size: 2em;
+  text-align: center;
+  color: white;
 }
